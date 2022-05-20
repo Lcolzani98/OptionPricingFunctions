@@ -1,0 +1,9 @@
+Package: OptionPricingFunctions
+Type: Package
+Title: Option Pricing Functions
+Version: 1.0
+Date: 2022-05-08
+Author: Colzani Luca colzal@usi.ch, Magni Marta magnim@usi.ch Mancassola Gaia mancag@usi.ch, Kakkanattu Jenson kakkaj@usi.ch
+Maintainer: Luca Colzani <colzal@usi.ch> 
+Description: A collection of functions to price different kind of options, we use the formula given by the book "At the complete guide to option pricing formulas by Espen Gaarder Haug"
+License: GPL-2
