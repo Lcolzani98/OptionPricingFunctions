@@ -56,7 +56,7 @@ function (s, K, r, b, v, p, c, t, type)
             t)/(v * sqrt(t))
         e4 <- e3 - p * v * sqrt(t)
         price <- s^(p) * exp(((p - 1) * (r + p * v^(2)/2) - p * 
-            (r - b)) * t) * (pnorm(e1) - pnorm(e2)) - exp(-r * 
+            (r - b)) * t) * (pnorm(e1) - pnorm(e3)) - exp(-r * 
             t) * (K * pnorm(e2) - (c + K) * pnorm(e4))
     }
     if (type == "P") {

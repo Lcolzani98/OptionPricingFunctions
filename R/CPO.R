@@ -26,7 +26,7 @@ function(s ,K  , r, b, v, p, c, t, type){
     
     e3 <- ((log(s/(c+K )^(1/p))) + (b + (p - 0.5 ) * v^(2))*t) / (v * sqrt(t))
     e4 <- e3 - p*v*sqrt(t)
-    price <- s^(p) * exp(((p - 1) * (r + p*v^(2)/2) - p*(r - b))*t) * (pnorm(e1) - pnorm(e2)) -
+    price <- s^(p) * exp(((p - 1) * (r + p*v^(2)/2) - p*(r - b))*t) * (pnorm(e1) - pnorm(e3)) -
       exp(-r*t) * (K *pnorm(e2) - (c + K ) * pnorm(e4))
     
   }
